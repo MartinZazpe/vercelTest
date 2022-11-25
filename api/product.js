@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
     //     console.log(error)
     //     return res.status(500).send("server error")
     // }
-    res.render('index')
+    res.render('./index')
 
 })
 
