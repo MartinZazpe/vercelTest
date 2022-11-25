@@ -12,7 +12,7 @@ app.listen(port, () => {
     console.log(`server is running in port ${port}`)
 })
 
-app.use('/api/product', product)
+app.use('/', product)
 
 // app.get('/', (req, res) => {
 //     res.send('Hello World!')
