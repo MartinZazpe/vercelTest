@@ -5,10 +5,11 @@ const router = express.Router()
 router.get("/", async (req, res) => {
 
     try {
-        res.json({
-            status: 200,
-            message: "get data has succesfully"
-        })
+        // res.json({
+        //     status: 200,
+        //     message: "get data has succesfully"
+        // })
+        res.render('index')
     }
     catch (error) {
         console.log(error)
