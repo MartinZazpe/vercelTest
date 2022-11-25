@@ -2,7 +2,7 @@
 const express = require('express')
 const router = express.Router()
 
-router.get("/", async (req, res) => {
+router.get("/", (req, res) => {
 
     // try {
     //     res.json({
@@ -14,8 +14,7 @@ router.get("/", async (req, res) => {
     //     console.log(error)
     //     return res.status(500).send("server error")
     // }
-    res.render('./index')
-
+    res.render('index')
 })
 
 module.exports = router
